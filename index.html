@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Звучание музыкальной шкатулки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <main>
+    <section class="hero" id="hero">
+      <nav class="topbar">
+        <div class="brand"><span></span> Acoustic Object / 01</div>
+        <button class="sound-permission" id="soundPermission">включить звук</button>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="copy reveal">
+          <p class="eyebrow">Натяжение и резонанс</p>
+          <h1>Звучание музыкальной шкатулки</h1>
+          <p class="lead">Интерактивный сайт-объект о том, как звук возникает не как функция, добавленная к форме, а как сила, организующая форму во времени и пространстве.</p>
+          <div class="actions">
+            <button class="primary" data-note="C5">прикоснуться к механизму</button>
+            <a href="#research">читать исследование</a>
+          </div>
+        </div>
+
+        <div class="object-stage reveal delay">
+          <div class="halo"></div>
+          <div class="music-box" id="musicBox">
+            <div class="lid">
+              <div class="lid-inner">
+                <div class="mirror"></div>
+                <div class="lid-line"></div>
+              </div>
+            </div>
+            <div class="box-body">
+              <div class="pin-grid" id="pinGrid"></div>
+              <div class="comb">
+                <span data-note="C5"></span><span data-note="D5"></span><span data-note="E5"></span><span data-note="G5"></span><span data-note="A5"></span><span data-note="C6"></span>
+              </div>
+              <div class="cylinder" id="cylinder">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <div class="key" id="windKey"><span></span></div>
+              <div class="base-shadow"></div>
+            </div>
+          </div>
+          <p class="caption">Нажимай на зубцы, кнопки и ключ: каждый контакт запускает собственный резонанс.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="research">
+      <div class="section-title reveal">
+        <p>исследовательская рамка</p>
+        <h2>Звук как архитектура объекта</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal" data-note="E4">
+          <span>01</span>
+          <h3>Физика звука как явление</h3>
+          <p>Колебание становится слышимым, когда материал передаёт импульс воздуху. В музыкальной шкатулке источник звука — момент касания зубца и штифта.</p>
+        </article>
+        <article class="card reveal" data-note="G4">
+          <span>02</span>
+          <h3>Резонанс как работа объекта</h3>
+          <p>Корпус усиливает микроскопическое движение металла. Объект звучит не только внутри себя, но и через поверхность, пустоту и плотность материала.</p>
+        </article>
+        <article class="card reveal" data-note="B4">
+          <span>03</span>
+          <h3>Архитектура звука</h3>
+          <p>Мелодия возникает как маршрут: штифты, цилиндр, зубцы и корпус создают временную композицию, где форма становится партитурой.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="instrument reveal">
+      <div>
+        <p class="eyebrow">интерактивный фрагмент</p>
+        <h2>Сыграй структуру</h2>
+        <p>Кнопки ниже имитируют разные элементы механизма: натянутый металл, деревянный корпус, стеклянную крышку и заводной ключ.</p>
+      </div>
+      <div class="pads" id="pads">
+        <button data-note="C4" data-type="wood">корпус</button>
+        <button data-note="E4" data-type="metal">зубец</button>
+        <button data-note="G4" data-type="glass">крышка</button>
+        <button data-note="B4" data-type="bass">пустота</button>
+        <button data-note="D5" data-type="metal">штифт</button>
+        <button data-note="A4" data-type="wind">ключ</button>
+      </div>
+    </section>
+
+    <section class="score reveal">
+      <div class="score-lines">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="score-text">
+        <p>гипотеза</p>
+        <h2>Звук нельзя понимать как добавленную к форме функцию.</h2>
+        <p>В подобных объектах звук, возникающий из натяжения и резонанса, организует форму как временную и пространственную структуру. Поэтому музыкальная шкатулка — не декоративный предмет, а маленькая архитектура акустических событий.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
